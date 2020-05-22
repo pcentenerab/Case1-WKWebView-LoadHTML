@@ -32,8 +32,8 @@ class ViewController: UIViewController {
         config.userContentController = contentController
         self.webView = WKWebView(frame: CGRect.init(), configuration: config)
         
-        self.webView.load(URLRequest(url: URL(string: "http://pruebaswifthtml.herokuapp.com")!))
-        //self.webView.load(URLRequest(url: URL(string: "http://127.0.0.1:3000")!))
+        //self.webView.load(URLRequest(url: URL(string: "http://pruebaswifthtml.herokuapp.com")!))
+        self.webView.load(URLRequest(url: URL(string: "http://127.0.0.1:3000")!))
         print("¿Cargando app.js?")
         print(self.webView.isLoading ? "Sí. Hay que esperar" : "Ya he terminado!")
         while (self.webView.isLoading) {

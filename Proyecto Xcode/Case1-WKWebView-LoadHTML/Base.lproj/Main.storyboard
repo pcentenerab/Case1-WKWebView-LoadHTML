@@ -15,49 +15,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8u-xj-GdQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8u-xj-GdQ">
                                 <rect key="frame" x="174" y="324" width="77" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="RESET"/>
                                 <connections>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCQ-5d-eZl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odR-k6-d5S">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odR-k6-d5S">
                                 <rect key="frame" x="273" y="324" width="30" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="incr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvc-jc-30C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6p-cZ-7kK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6p-cZ-7kK">
                                 <rect key="frame" x="118" y="324" width="30" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="decr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c39-qm-DmC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Case 1 WKWebView LoadHTML" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jC-si-ARc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Case 1 WKWebView LoadHTML" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jC-si-ARc">
                                 <rect key="frame" x="21" y="98" width="372" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zc-9L-pZF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zc-9L-pZF">
                                 <rect key="frame" x="147" y="191" width="121" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c8u-xj-GdQ" firstAttribute="top" secondItem="2zc-9L-pZF" secondAttribute="bottom" constant="78" id="5Y1-6f-n3h"/>
+                            <constraint firstItem="2zc-9L-pZF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="6QW-I5-NcT"/>
+                            <constraint firstItem="h6p-cZ-7kK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="BNq-ZF-zV7"/>
+                            <constraint firstItem="c8u-xj-GdQ" firstAttribute="baseline" secondItem="odR-k6-d5S" secondAttribute="baseline" id="JkJ-FY-noU"/>
+                            <constraint firstItem="8jC-si-ARc" firstAttribute="centerX" secondItem="2zc-9L-pZF" secondAttribute="centerX" id="Kv2-6d-Gkh"/>
+                            <constraint firstItem="odR-k6-d5S" firstAttribute="leading" secondItem="c8u-xj-GdQ" secondAttribute="trailing" constant="22" id="OMh-y2-pBt"/>
+                            <constraint firstItem="h6p-cZ-7kK" firstAttribute="baseline" secondItem="c8u-xj-GdQ" secondAttribute="baseline" id="YVA-T2-xqW"/>
+                            <constraint firstItem="2zc-9L-pZF" firstAttribute="top" secondItem="8jC-si-ARc" secondAttribute="bottom" constant="60" id="bsA-hz-BCn"/>
+                            <constraint firstItem="8jC-si-ARc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mI6-N2-M6H"/>
+                            <constraint firstItem="8jC-si-ARc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="msI-S8-gXo"/>
+                            <constraint firstItem="c8u-xj-GdQ" firstAttribute="leading" secondItem="h6p-cZ-7kK" secondAttribute="trailing" constant="26" id="z2H-JQ-P0k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
